@@ -1,6 +1,9 @@
 # Blog APIS
 
-This is a project being built upon a pre-exist api to help extend its functionalities like: allow users to search multiple tags at a time, sort by fields, and sort by which direction.
+This is a project being built upon a pre-exist api to help extend its functionalities like: 
+- allow users to search multiple tags at a time,
+- sort by fields 'id', 'reads', 'likes', 'popularity'
+- sort by which direction 'asc','desc'.
 
 ## Set Up
 At the root directory, enter 
@@ -10,7 +13,7 @@ At the root directory, enter
 Then run the project by 
 ```npm start```. Notice the port being printed out on the console log
 
- Redirect to localhost:PORT and you can see the list of blog posts displayed.
+ Redirect to ```http://localhost:PORT/api/posts?tags=history,tech&sortBy=likes&direction=desc``` and you can see the list of blog posts displayed.
 
 ### If you just want to test the functions
 Then run ```npm test``` to see the cases these functions passed.
